@@ -1,0 +1,18 @@
+.logo-header {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+
+  padding-top: 24px;
+  padding-bottom: 25px;
+  margin-right: 93px;
+
+  text-decoration: none;
+
+  color: var(--color-hover);
+
+  &__accent {
+    color: var(--color-logo);
+  }
+}

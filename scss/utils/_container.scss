@@ -1,0 +1,28 @@
+.сontainer {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include mq(mobmin480) {
+    width: 480px;
+  }
+
+  @include mq(tabmin768) {
+    width: 768px;
+  }
+
+  @include mq(deskmin1200) {
+    width: 1200px;
+  }
+}
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @include mq(deskmin1200) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}

@@ -1,0 +1,140 @@
+/*Портфолио*/
+
+.navigation {
+  justify-content: center;
+  padding-top: 96px;
+  padding-bottom: 92px;
+  /*background-color: tomato;*/
+}
+
+.button-navigation {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 1px;
+  display: block;
+  justify-content: center;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 22px;
+  padding-right: 22px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-navigation:hover,
+.button-navigation:focus {
+  color: #ffffff;
+  background-color: #2196f3;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.list-navigation .li-navigation:not(:last-child) {
+  margin-right: 8px;
+  /*.list-footer .footer-list:not(:last-child) {
+        margin-bottom: 9px;*/
+}
+
+.list-navigation {
+  display: flex;
+  list-style: none;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+
+/*--Примеры проектов--*/
+
+.list-flexbox {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  /*outline: 1px solid tomato;*/
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.list-flexbox .element {
+  /*outline: 1px solid #ea2ca4;*/
+  margin-left: 30px;
+  margin-top: 30px;
+  flex-basis: calc(100% / 3-30px);
+}
+
+.element-flexbox {
+  padding-right: 24px;
+  padding-left: 24px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  border: 1px solid #eeeeee;
+}
+
+.portfolio-overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery.link:hover .paragraph,
+.gallery.link:focus .paragraph {
+  transform: translateY(0);
+}
+
+.paragraph {
+  position: absolute;
+  font-weight: 400px;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 63px 24px;
+
+  background-color: rgba(33, 150, 243, 0.9);
+
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.gallery.link {
+  display: block;
+  margin-top: 0px;
+  display: block;
+  text-decoration: none;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.element .gallery.link:hover,
+.element .gallery.link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.progect {
+  color: #212121;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  margin-bottom: 4px;
+  /*margin-top: 20px;*/
+}
+
+.desc {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
